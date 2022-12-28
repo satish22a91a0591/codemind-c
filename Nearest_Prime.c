@@ -20,11 +20,11 @@ int prime(int n)
 }
 int main()
 {
-    int x,f,b;
-    scanf("%d",&x);
-    for(int i=1;i<=x;i++)
+    int a;
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++)
     {
-        int n;
+        int n,b,f;
         scanf("%d",&n);
         for(int i=n;;i++)
         {
@@ -44,16 +44,16 @@ int main()
         }
         int d1=f-n;
         int d2=n-b;
-        if(d1<d2)
-        {
-            printf("%d
-",f);
-        }
-        else if(d2<=d1)
+        if(d2<=d1)
         {
             printf("%d
 ",b);
         }
+        else if(d1<d2)
+        {
+            printf("%d
+",f);
+        }
+        
     }
-    
 }
