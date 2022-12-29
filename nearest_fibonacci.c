@@ -22,7 +22,6 @@ int main()
             m=x;
             break;
         }
-        //printf("%d ",x);
         z=x+y;
         x=y;
         y=z;
