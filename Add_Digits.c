@@ -1,15 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,rem,rem2,sum=0,sum2=0;
+    int n,s=0,r;
     scanf("%d",&n);
-    //printf("%d",n);
     while(n>9)
     {
-        rem=n%10;
+        r=n%10;
         n=n/10;
-        n=n+rem;
+        n=n+r;
     }
     printf("%d",n);
-    
 }
