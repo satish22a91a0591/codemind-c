@@ -1,25 +1,34 @@
 #include<stdio.h>
 #include<math.h>
+int power(int a,int b)
+{
+    int p=1;
+    for(int i=1;i<=b;i++)
+    {
+        p=p*a;
+    }
+    return p;
+}
 int main()
 {
-    int n,x=0;
+    int n;
     scanf("%d",&n);
-    int i=1;
+    int x=0,i=1;
     while(x<=n)
     {
-        x=pow(2,i);
+        x=power(2,i);
         i++;
     }
     int f=x;
     int b=f/2;
     int d1=f-n;
     int d2=n-b;
-    if(d1>=d2)
-    {
-        printf("%d",d2);
-    }
-    else if(d2>d1)
+    if(d1<d2)
     {
         printf("%d",d1);
+    }
+    else
+    {
+        printf("%d",d2);
     }
 }
