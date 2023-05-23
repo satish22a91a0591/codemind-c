@@ -1,25 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,r,c=0;
     scanf("%d",&n);
-    int t=n,r,c=0;
+    int t=n;
     while(n!=0)
     {
         r=n%10;
         c++;
         n=n/10;
     }
-    int a[c],cnt=0;
+    int tem=c;
+    int a[c];
     while(t!=0)
     {
         r=t%10;
-        a[c-1]=r;
+        // printf("%d ",r);
+        a[c]=r;
         c--;
-        cnt++;
         t=t/10;
     }
-    for(int i=0;i<cnt;i++)
+    for(int i=1;i<=tem;i++)
     {
         if(a[i]==6)
         {
@@ -27,7 +28,7 @@ int main()
             break;
         }
     }
-    for(int i=0;i<cnt;i++)
+    for(int i=1;i<=tem;i++)
     {
         printf("%d",a[i]);
     }
