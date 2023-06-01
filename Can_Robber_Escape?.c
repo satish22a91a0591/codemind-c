@@ -1,13 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,c=0;
+    int n;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    int a[n];
+    for(int i=0;i<n;i++)
     {
-        int a;
-        scanf("%d",&a);
-        if(n<=a)
+        scanf("%d",&a[i]);
+    }
+    int c=0;
+    for(int i=0;i<n;i++)
+    {
+        if(n<=a[i])
         {
             c++;
         }
@@ -16,8 +20,7 @@ int main()
     {
         printf("YES");
     }
-    else
-    {
+    else{
         printf("NO");
     }
 }
