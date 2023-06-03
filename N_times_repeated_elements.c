@@ -24,8 +24,10 @@ int main()
         {
             printf("%d ",a[i]);
             flag=1;
+            for(int k=0; k<n; k++)
+           {
                a[i]=0;
-           
+           }
         }
     }
     if(flag==0)
